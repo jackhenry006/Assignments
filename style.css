@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#yellow {
+  background-color: rgba(255, 255, 4, 0.725);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 20px solid white;
+}
+#cream {
+  background-color: beige;
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  left: 60%;
+}
+
+#image {
+  position: absolute;
+  top: 74%;
+  left: 10%;
+}
+
+#pikachu {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  height: 600px;
+  width: auto;
+  text-align: left;
+}
+
+#head {
+  position: absolute;
+  bottom: 500px;
+  font-size: 90px;
+  font-family: fantasy;
+  font-weight: 500;
+}
+
+#para {
+  position: absolute;
+  bottom: 430px;
+  font-size: 15px;
+  font-family: monospace;
+  text-align: left;
+  width: 300px;
+}
+
+#poke {
+  position: absolute;
+  bottom: 600px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo {
+  position: absolute;
+  bottom: 650px;
+  right: 100%;
+}
+
+.ri-menu-line {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#page {
+  position: absolute;
+  bottom: 400px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 80px;
+}
