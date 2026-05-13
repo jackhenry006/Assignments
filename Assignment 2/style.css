@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(4, 6, 7);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+#row1 {
+  display: flex;
+  position: relative;
+  gap: 20px;
+}
+
+#row2 {
+  display: flex;
+  position: relative;
+  top: 20px;
+  gap: 20px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+#heading {
+  color: aliceblue;
+  /* position: absolute; */
+  /* top: 57px; */
+  font-family: monospace;
+  font-size: 50px;
+}
+#headup {
+  color: rgb(58, 139, 211);
+  position: absolute;
+  top: 25px;
+  font-family: monospace;
+  font-weight: 300px;
+}
+
+#l1 {
+  display: flex;
+  color: aliceblue;
+  position: absolute;
+  font-family: monospace;
+  font-size: x-small;
+  top: 45px;
+  left: 600px;
+  gap: 20px;
+}
+#l2 {
+  color: aliceblue;
+  position: relative;
+  left: 305px;
+  font-size: x-small;
+  font-family: monospace;
+}
+#navbar {
+  display: flex;
+  gap: 10px;
+}
+#line {
+  background-color: aliceblue;
+  position: absolute;
+  height: 44px;
+  width: 1px;
+  left: 48%;
+}
+#button {
+  color: aliceblue;
+  background-color: rgb(45, 92, 133);
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 90%;
+  font-family: monospace;
+}
+
+#ls {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  font-family: monospace;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+#footer {
+  display: flex;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: xx-small;
+  font-weight: 600px;
+}
