@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(4, 6, 7);
 }
 
 html,
@@ -11,8 +10,22 @@ body {
   width: 100%;
   margin: 10px;
   padding: 10px;
+  background-color: rgb(4, 6, 7);
 }
-
+@media (max-width: 768px) {
+  #row1,
+  #row2 {
+    flex-direction: column;
+  }
+  #row1 img,
+  #row2 img {
+    width: 100%;
+    height: auto;
+  }
+  #navbar {
+    flex-direction: column;
+  }
+}
 #row1 {
   display: flex;
   position: relative;
@@ -42,7 +55,7 @@ img {
   position: absolute;
   top: 25px;
   font-family: monospace;
-  font-weight: 300px;
+  font-weight: 300;
 }
 
 #l1 {
@@ -100,5 +113,5 @@ img {
   justify-content: center;
   font-family: monospace;
   font-size: xx-small;
-  font-weight: 600px;
+  font-weight: 600;
 }
