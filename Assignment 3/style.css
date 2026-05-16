@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: 50px 450px 165px 165px calc(100% - 830px);
+  grid-template-rows: 100px calc(100% - 200px) 100px;
+}
+
+#sec {
+  background-color: aquamarine;
+  grid-row: 1/4;
+}
+#sec1 {
+  background-color: rgb(9, 37, 27);
+  grid-column: 3/7;
+}
+
+#sec2 {
+  background-color: rgb(81, 3, 52);
+  grid-column: 3/6;
+}
+
+#foot {
+  background-color: bisque;
+  grid-column: 3/6;
+}
+
+#aside {
+  background-color: brown;
+  grid-row: 1/4;
+}
