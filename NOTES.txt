@@ -1,0 +1,9 @@
+[THIS NOTES IS IN MY OWN LANGUAGE]
+
+GRID STEPS -
+
+1.First re neiki se photo re kete ra element ochonti dekhibu au count koriki sete tha elemnts
+bonaibu HTML re.
+2.tapore tu each element ku background color provide koribu CSS re.
+3.tapore grid template coloms use kori bu kete ta column ochi dekhi bu , then tu ta pore sete ra coloum kori bu 
+mundo logaibu ki kuta kete width ro hai paribo ( main concept mundo logaibu ).
