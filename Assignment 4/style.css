@@ -14,36 +14,112 @@ body {
 }
 
 main {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   padding: 20px;
+
   background-color: aliceblue;
   display: grid;
-  grid-template-columns: 1fr 8fr 2fr 2fr 2fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 5% 35% 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+    "sidebar singleimg portfolio portfolio portfolio "
+    "sidebar singleimg flamingo flamingo rightbar"
+    "sidebar singleimg apple btrtcorner btrtcorner";
+  gap: 5px;
 }
-#Navbar {
-  height: 100%;
-  grid-row: 1 / 4;
-  background-color: blue;
+
+.singleimg {
+  background-color: aquamarine;
+  grid-area: singleimg;
 }
-#sec1 {
+
+.sidebar {
+  background-color: aliceblue;
+  grid-area: sidebar;
   height: 100%;
-  grid-row: 1 / 4;
-  background-color: rgb(221, 171, 109);
 }
-#sec2 {
-  height: 100%;
-  grid-row: 1 / 4;
-  background-color: rgb(221, 109, 158);
+
+.flamingo {
+  background-color: brown;
+  grid-area: flamingo;
 }
-#sec3 {
-  height: 100%;
-  grid-row: 1 / 4;
-  background-color: rgb(19, 56, 25);
+
+.apple {
+  background-color: rgb(208, 208, 223);
+  grid-area: apple;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
-#sec4 {
+
+.rightbar {
+  background-color: rgb(245, 137, 6);
+  grid-area: rightbar;
+}
+
+.btrtcorner {
+  background-color: rgb(159, 159, 159);
+  grid-area: btrtcorner;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.portfolio {
+  grid-area: portfolio;
+  font-family: monospace;
+  font-size: 150px;
+  display: flex;
+  align-items: center;
+  line-height: 0.9;
+  overflow: hidden;
+  transform: translateY(-10px);
+}
+
+.textdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
   height: 100%;
-  grid-row: 1 / 4;
-  background-color: rgb(204, 221, 24);
+}
+
+.textdiv h6 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.apple i {
+  font-size: 100px;
+}
+
+.btrtcorner img {
+  border: black solid 5px;
+}
+
+.rightbar .updiv {
+  background-color: rgb(107, 187, 139);
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightbar .dwndiv {
+  background-color: rgb(160, 42, 81);
+  height: 50%;
+}
+
+.updiv h1 {
+  font-size: 90px;
+  font-family: monospace;
+}
+
+.updiv p {
+  font-size: 20px;
+  font-family: monospace;
 }

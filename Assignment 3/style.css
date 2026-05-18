@@ -40,7 +40,7 @@ main {
   grid-column: 3/6;
 }
 
-#aside {
+h5 {
   background-color: brown;
   grid-row: 1/4;
 }
