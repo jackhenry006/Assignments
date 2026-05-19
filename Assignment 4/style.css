@@ -58,11 +58,11 @@ main {
 
 .rightbar {
   grid-area: rightbar;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .btrtcorner {
-  background-color: rgb(159, 159, 159);
+  background-color: rgb(163, 172, 122);
   grid-area: btrtcorner;
   display: flex;
   justify-content: space-evenly;
