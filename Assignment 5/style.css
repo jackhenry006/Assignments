@@ -47,7 +47,16 @@ nav {
   font-size: 8px;
   border: 2px solid black;
 }
-
+#hiring button {
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 150px;
+  padding: 10px;
+  height: 40px;
+  color: rgb(7, 7, 7);
+  background-color: beige;
+  font-size: large;
+}
 #hiring {
   display: flex;
   align-items: center;
@@ -187,14 +196,179 @@ nav {
 }
 
 .box1 {
-  background-color: blue;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
 }
 .box2 {
-  background-color: rgb(208, 255, 0);
+  background-color: rgb(255, 255, 255);
 }
 .box3 {
-  background-color: rgb(255, 0, 179);
+  background-color: rgb(255, 255, 255);
 }
 .box4 {
-  background-color: rgb(119, 0, 255);
+  background-color: rgb(255, 255, 255);
+}
+#innernav {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+}
+#innernav button {
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 100px;
+  padding: 10px;
+  height: 40px;
+  color: rgb(7, 7, 7);
+  background-color: rgb(255, 255, 255);
+  font-size: large;
+}
+
+#innernav button:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+#innernav h1 {
+  font-family: monospace;
+}
+
+#web3 {
+  padding: 10px;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "div1 div2 div3 divwhite1"
+    "divwhite2 div4 div5 div6 ";
+}
+
+.div1 {
+  padding: 30px;
+  background-color: rgb(144, 211, 172);
+  grid-area: div1;
+}
+.div2 {
+  padding: 30px;
+  background-color: rgb(188, 212, 212);
+  grid-area: div2;
+}
+.div3 {
+  padding: 30px;
+  background-color: rgb(132, 132, 109);
+  grid-area: div3;
+}
+
+.div4 {
+  padding: 30px;
+  background-color: rgb(185, 181, 105);
+  grid-area: div4;
+}
+
+.div5 {
+  padding: 30px;
+  background-color: rgb(213, 223, 134);
+  grid-area: div5;
+}
+.div6 {
+  padding: 30px;
+  background-color: rgb(182, 230, 130);
+  grid-area: div6;
+}
+
+.divwhite1 {
+  background-color: rgb(248, 250, 246);
+  grid-area: divwhite1;
+}
+
+.divwhite2 {
+  background-color: rgb(248, 250, 246);
+  grid-area: divwhite2;
+}
+
+.div1 p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+.div1 h3 {
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+.div1 button {
+  margin-bottom: 30px;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 150px;
+  padding: 10px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(4, 3, 3);
+  font-size: large;
+  font-family: monospace;
+}
+
+.div2 p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+.div2 h3 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.div3 p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+.div3 h3 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.div4 p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+.div4 h3 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.div5 p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+.div5 h3 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.div6 p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+.div6 h3 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+#boxx {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+#boxx h1 {
+  font-size: 85px;
+}
+#boxx .part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
 }
