@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  height: 10%;
+  width: 100vw;
+  padding: 10px 20px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  font-family: monospace;
+  font-size: x-small;
+}
+
+#head {
+  background-color: beige;
+  border-radius: 45%;
+  padding: 10px;
+  font-size: 8px;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navend {
+  background-color: beige;
+  height: 40px;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 8px;
+  border: 2px solid black;
+}
+
+#hiring {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
