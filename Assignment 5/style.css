@@ -587,3 +587,116 @@ nav {
 #wrim2 #lw2 {
   margin-top: 10px;
 }
+
+#nav4 {
+  padding: 30px;
+}
+#nav4 h1 {
+  font-size: 20px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#nav4 button {
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 150px;
+  padding: 10px;
+  height: 40px;
+  color: rgb(255, 253, 253);
+  background-color: rgb(4, 4, 4);
+  font-size: large;
+  font-family: monospace;
+}
+
+#nav4 button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#boxflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#boxflex h6 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#boxflex p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 50px 60px;
+  margin-top: 50px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-top h1 {
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: gray;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons i {
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-icons i:hover {
+  transform: translateY(-5px);
+  color: gray;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  color: rgb(180, 180, 180);
+}
+
+#footer hr {
+  margin-top: 30px;
+  border: 1px solid rgb(60, 60, 60);
+}
