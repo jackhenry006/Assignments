@@ -98,7 +98,7 @@ nav {
 #animate {
   background-color: brown;
   display: flex;
-  /* padding: 20px 0; */
+
   overflow: hidden;
   width: 100%;
   height: 200px;
@@ -371,4 +371,219 @@ nav {
   align-items: center;
   gap: 20px;
   font-size: 30px;
+}
+
+#indiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.crd1 {
+  background-color: rgb(134, 142, 142);
+  height: 400px;
+  width: 300px;
+  padding: 30px;
+}
+.crd1 h5 {
+  margin-bottom: 30px;
+}
+.crd1 h4 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.crd1 p {
+  margin-bottom: 40px;
+}
+
+.crd1 button {
+  margin-top: 40px;
+}
+
+.crd1 button {
+  margin-bottom: 30px;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 150px;
+  padding: 10px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(4, 3, 3);
+  font-size: large;
+  font-family: monospace;
+}
+
+.crd1 button:hover {
+  background-color: rgb(255, 246, 246);
+  color: rgb(0, 0, 0);
+}
+.crd {
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(134, 142, 142);
+  height: 400px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.crd div {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(254, 254, 254);
+}
+
+.crd img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.crd button {
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 8px 15px;
+  background: white;
+}
+
+.crd button:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+.picnav {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.picnav h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.picnav button {
+  margin-bottom: 30px;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 150px;
+  padding: 10px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  font-size: large;
+  font-family: monospace;
+}
+
+.picnav button:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+#logos {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  width: 100%;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  background: transparent;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.crd:hover #logos {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#logos i {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+}
+
+#logos i:hover {
+  transform: scale(1.2);
+}
+
+#box3 {
+  height: 600px;
+  width: 100%;
+  background-color: rgb(114, 174, 174);
+  padding: 60px;
+  margin: 30px;
+}
+
+#box3 h1 {
+  font-family: monospace;
+  font-size: 40px;
+  margin-left: 400px;
+}
+
+#box3 #con {
+  font-family: monospace;
+  font-size: 20px;
+  margin-left: 400px;
+  margin-top: 30px;
+}
+
+#box3 button {
+  margin-bottom: 30px;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 150px;
+  padding: 10px;
+  height: 40px;
+  color: rgb(255, 253, 253);
+  background-color: rgb(4, 4, 4);
+  font-size: large;
+  font-family: monospace;
+  margin-left: 400px;
+  margin-top: 150px;
+}
+
+#box3 button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+#writing {
+  padding: 20px;
+  margin: 30px;
+  margin-left: 400px;
+}
+
+#write1 {
+  display: flex;
+}
+
+#wrim1 h3 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+#wrim1 #lw1 {
+  margin-top: 10px;
+}
+
+#wrim2 h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+#wrim2 #lw2 {
+  margin-top: 10px;
 }
