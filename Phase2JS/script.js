@@ -1,5 +1,7 @@
 console.log("Hii Ankit");
 
+// ************************************************Beginner Level********************************************
+
 // function greet(){
 //     console.log("Hello World");
 // }
@@ -46,10 +48,101 @@ console.log("Hii Ankit");
 // }
 // console.log(area(6,7))
 
-function vote(age) {
-  var vot = age > 18 ? "Adult" : "Minor";
+// function vote(age) {
+//   var vot = age > 18 ? "Adult" : "Minor";
 
-  return vot;
-}
+//   return vot;
+// }
+// console.log(vote(62));
 
-console.log(vote(62));
+// function rev(str){
+// let reversed = str.split("").reverse().join("");
+// console.log(reversed);
+// }
+// rev("Ankit")
+
+//*******************************Intermediate Level**********************************************
+
+// var mul= (a,b) =>{
+//     return a*b;
+// }
+// console.log(mul(2,4));
+
+// var ans= (a)=>{
+//     return a;
+// }
+// console.log(ans("Ankit"))
+
+// function un(...arr){
+//  console.log(arr);
+// }
+// un(2,3,4,5,6,7,8)
+
+// function count(str){
+//     let len=str.length
+//     let vowels="aieouAEIOU"
+//     let count=0
+//     for(let i=1;i<=len;i++){
+//         if(vowels.includes(str.charAt(i))){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(count("Ankit"))
+
+// function plaindrome(str){
+//     let copy = str.touppercase;
+//     let rev = str.split("").reverse().join("").touppercase;
+
+//     var ans= copy==rev? "Yes it is a Palindrome":"Not a plaindrome";
+//     return ans;
+// }
+// console.log(plaindrome("Madam"))
+
+// function hii(cb){
+//     console.log("Hii Sir")
+//     cb()
+// }
+
+// function hlo(){
+//     console.log("Hello Sir & Madam")
+// }
+
+// hii(hlo)
+
+// function call(cb){
+//     console.log("The main function")
+//     function call2(cb){
+//         console.log(cb);
+//     }
+//     call2(cb)
+//     call2(cb)
+
+// }
+// call(67)
+
+// function back(cb){
+//     return cb;
+// }
+
+// function ank(){
+//     console.log("Hii pila.....");
+// }
+// console.log(back(ank))
+
+// function pure(a,b){
+//     return a-b;
+// }
+// console.log(pure(10,2));
+
+// var a=3;
+// function impure(){
+//     a++;
+//     return a
+// }
+
+// console.log(impure())
+// console.log(impure())
+
+//**************************************************Advance Level**************************************
