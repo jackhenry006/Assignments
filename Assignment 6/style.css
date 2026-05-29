@@ -2,6 +2,15 @@
   font-family: "MainFont";
   src: url("./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2");
 }
+@font-face {
+  font-family: "mainfont2";
+  src: url("./fonts/midnight-sans-rd-12-medium-trial.otf");
+}
+
+@font-face {
+  font-family: "mainfont3";
+  src: url("./fonts/RecklessCondensedS-TRIAL-Book.woff");
+}
 
 * {
   margin: 0;
@@ -228,6 +237,260 @@ nav {
 #cnt button:hover {
   background-color: white;
   color: black;
+}
+
+#web3 {
+  background-color: beige;
+  padding: 150px 150px;
+}
+
+#web3inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+#discover {
+  height: 70px;
+  width: 300px;
+  background-color: rgb(247, 97, 43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transform: rotate(-3deg);
+  border: 3px solid black;
+  border-radius: 10px;
+}
+#discover h1 {
+  font-size: 60px;
+}
+
+#bigtxt {
+  font-size: 70px;
+}
+
+#inbx {
+  height: 100px;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#layout {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 50px);
+  gap: 10px;
+  grid-template-areas:
+    "r11 r12 r13 r13 r14 r15 r15"
+    "r21 r21 r22 r23 r24 r25 r26"
+    "r31 r32 r33 r33 r34 r35 r35";
+}
+#r11 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r12 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r13 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r14 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r15 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r21 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r22 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r23 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r24 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r25 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r26 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+
+#r31 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r32 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r33 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r34 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+#r35 {
+  background-color: rgb(123, 198, 198);
+  grid-area: r35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: x-large;
+  font-family: mainfont3;
+}
+
+#r11:hover,
+#r12:hover,
+#r13:hover,
+#r14:hover,
+#r15:hover {
+  background-color: rgb(86, 110, 207);
+  color: white;
+}
+
+#r21:hover,
+#r22:hover,
+#r23:hover,
+#r24:hover,
+#r25:hover,
+#r26:hover {
+  background-color: rgb(86, 110, 207);
+  color: white;
+}
+
+#r31:hover,
+#r32:hover,
+#r33:hover,
+#r34:hover,
+#r35:hover {
+  background-color: rgb(86, 110, 207);
+  color: white;
 }
 
 /* Tablet
