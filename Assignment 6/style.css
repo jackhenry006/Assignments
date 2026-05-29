@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "MainFont";
+  src: url("./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +11,213 @@
 
 html,
 body {
-  height: 100vh;
   width: 100%;
-  margin: 0px;
-  padding: 0px;
+  height: 100%;
+  font-family: "MainFont";
   overflow-x: hidden;
 }
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+nav {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  right: 20px;
+
+  width: auto;
+  height: 60px;
+
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: beige;
+
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#leftnav,
+#rytnav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#leftnav h4,
+#rytnav h5 {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#lgimg {
+  height: 45px;
+  width: auto;
+}
+
+#rytnav i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#writing {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+
+#writing h1 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 20;
+}
+#writing p {
+  font-size: 16px;
+  font-weight: 20;
+}
+
+#writing button {
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-top: 20px;
+  width: 150px;
+  padding: 10px;
+
+  color: rgb(7, 7, 7);
+  background-color: beige;
+  font-size: large;
+}
+
+#writing button:hover {
+  background-color: rgb(86, 86, 196);
+}
+
+#web2 {
+  background-color: beige;
+  padding: 30px;
+  gap: 40px;
+}
+#webup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+#webup h1 {
+  font-size: 50px;
+  font-family: "MainFont";
+  margin-top: 100px;
+}
+#web2bx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  height: 100px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 20px;
+  margin-top: 90px;
+  transform: rotate(-6deg);
+}
+
+#web2bx h2 {
+  font-size: 50px;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cardtext h5 {
+  font-size: x-large;
+}
+
+.cardtext p {
+  font-size: small;
+}
+.cardtext .money {
+  font-size: large;
+}
+
+.car img {
+  border: 2px solid black;
+  border-radius: 20px;
+
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.car {
+  position: relative;
+}
+
+#btn1 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+/* Tablet
+@media (max-width: 992px) {
+  nav {
+    padding: 15px 25px;
+  }
+
+  #leftnav,
+  #rytnav {
+    gap: 12px;
+  }
+
+  #rytnav h5 {
+    font-size: 0.7rem;
+  }
+
+  #leftnav h4 {
+    font-size: 0.9rem;
+  }
+} */
+
+/* Mobile */
+/* @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  #leftnav,
+  #rytnav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #lgimg {
+    height: 35px;
+  }
+
+  #leftnav h4,
+  #rytnav h5 {
+    font-size: 0.8rem;
+  }
+} */
