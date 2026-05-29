@@ -161,7 +161,6 @@ nav {
 .car img {
   border: 2px solid black;
   border-radius: 20px;
-
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -172,12 +171,65 @@ nav {
 .car {
   position: relative;
 }
-
-#btn1 {
+.crdbtn1 {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  bottom: 100px;
+  width: 50px;
+  height: 40px;
+  left: 95%;
+  transform: translateX(-95%);
+  background-color: beige;
+  border-radius: 10px;
 }
+
+.crdbtn2 {
+  position: absolute;
+  bottom: 90px;
+  width: 50px;
+  height: 40px;
+  right: 15px;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+.crdbtn3 {
+  position: absolute;
+  bottom: 130px;
+  width: 50px;
+  height: 40px;
+  right: 15px;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+.crdbtn1:hover,
+.crdbtn2:hover,
+.crdbtn3:hover {
+  background-color: rgb(28, 24, 91);
+  color: white;
+}
+
+#cnt {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+#cnt button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(28, 24, 91);
+  color: white;
+  border-radius: 50px;
+}
+
+#cnt button:hover {
+  background-color: white;
+  color: black;
+}
+
 /* Tablet
 @media (max-width: 992px) {
   nav {
