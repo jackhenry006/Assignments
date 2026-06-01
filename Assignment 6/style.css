@@ -493,6 +493,11 @@ nav {
   color: white;
 }
 
+#web4 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 /* Tablet
 @media (max-width: 992px) {
   nav {
