@@ -145,4 +145,78 @@ console.log("Hii Ankit");
 // console.log(impure())
 // console.log(impure())
 
-//**************************************************Advance Level**************************************
+// *************************JavaScript Beginner Practice Questions (Phase -2 ) Sheet - 2**********************
+
+// var arr = ["superman", "Demonslayer", "GOT", "pro", "hello"];
+// for (let a of arr) {
+//   console.log(a);
+// }
+
+// var arr =["hey",123,true,[1,3,4,5,67,7]]
+// console.log(arr[3][2])
+
+// var arr = [1,3,45,6,7,8,98,76,12,34,56,76,90,67,237]
+// console.log(arr[0])
+// console.log(arr[arr.length-1])
+
+// var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// var temp = arr[0];
+// arr[0] = arr[arr.length - 1];
+// arr[arr.length - 1] = temp;
+// console.log("The swapped result ", arr);
+
+// var arr = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// console.log(arr[0][1], arr[1][1], arr[2][1]);
+
+// var arr = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// console.log(arr[0][0] + arr[1][1] + arr[2][2]);
+
+// var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237]
+// console.log(arr.length)
+
+// var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// var ans = (a) => {
+//   if (a.length % 2 == 0) {
+//     return "Even";
+//   } else {
+//     return "odd";
+//   }
+// };
+// console.log(ans(arr));
+
+// var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237]
+// arr.push(2393)
+// arr.push(6767)
+// arr.push(9090)
+// console.log(arr)
+
+// var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// var arrPush = [98, 69, 78, 43, 23, 12, 21, 34, 35, 80];
+// for (let a = 0; a < arrPush.length; a++) {
+//   var i = arrPush[a];
+//   arr.push(i);
+// }
+// console.log(arr)
+
+// var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// console.log(arr.pop())
+
+var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+
+var count = arr.length;
+while (count > 0) {
+  console.log(arr.pop());
+  count--;
+}
+
+if (arr.length == 0) {
+  console.log("The arry is empty ", arr);
+}
