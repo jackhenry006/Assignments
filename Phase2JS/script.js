@@ -209,14 +209,53 @@ console.log("Hii Ankit");
 // var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
 // console.log(arr.pop())
 
-var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// var count = arr.length;
+// while (count > 0) {
+//   console.log(arr.pop());
+//   count--;
+// }
+// if (arr.length == 0) {
+//   console.log("The arry is empty ", arr);
+// }
 
-var count = arr.length;
-while (count > 0) {
-  console.log(arr.pop());
-  count--;
-}
+// var arr = ["superman", "Demonslayer", "GOT", "pro", "hello"];
+// arr.unshift("Ankit")
+// console.log(arr)
 
-if (arr.length == 0) {
-  console.log("The arry is empty ", arr);
-}
+// var arr = ["superman", "Demonslayer", "GOT", "pro", "hello"];
+// var enter = prompt("Enter the you want to enter in the array");
+// arr.unshift(enter);
+// console.log(arr);
+
+// var arr = [1, 3, 45, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// var count = arr.length;
+// while (count > 0) {
+//   console.log(arr.shift());
+//   count--;
+//   if (count == 2) {
+//     break;
+//   }
+// }
+// console.log(arr);
+
+// var arr = [1, 3, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// arr.splice(6, 2);
+// console.log(arr);
+
+// var arr = [1, 3, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// arr.splice(6, 3, 40, 50, 67, 89, 87);
+// console.log(arr);
+
+// var arr = [1, 3, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// console.log(arr.reverse());
+
+// var arr = [1, 3, 6, 7, 8, 98, 76, 12, 34, 56, 76, 90, 67, 237];
+// console.log(arr);
+// var half = arr.length / 2;
+// for (let i = 0; i < half / 2; i++) {
+//   let temp = arr[i];
+//   arr[i] = arr[half - 1 - i];
+//   arr[half - 1 - i] = temp;
+// }
+// console.log(arr);
