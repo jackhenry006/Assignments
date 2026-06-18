@@ -36,3 +36,7 @@ button {
   width: 80px;
   border-radius: 100px;
 }
+
+.lightup {
+  background-color: yellow;
+}

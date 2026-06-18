@@ -13,6 +13,7 @@ btn.addEventListener("click", () => {
   //     btn.textContent = "ON";
   //     flag = true;
   //   }
+
   if (bulb.classList.toggle("lightup")) {
     btn.textContent = "Off";
   } else {
