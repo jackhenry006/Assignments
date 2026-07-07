@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: whitesmoke;
+  padding: 20px;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(104, 139, 90, 0.74);
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+nav button {
+  height: 35px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background: rgb(52, 77, 56);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background: white;
+  color: black;
+}
+
+nav h1 {
+  transition: 0.3s;
+}
+
+nav h1:hover {
+  color: rgb(162, 206, 169);
+}
+
+#products {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.proCrd {
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.proCrd:hover {
+  transform: translateY(-5px);
+}
+
+.img {
+  width: 100%;
+  height: 220px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn button {
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+#update {
+  background: darkgoldenrod;
+}
+
+#delete {
+  background: darkred;
+}
+
+.form {
+  position: fixed;
+  inset: 0;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: rgba(0, 0, 0, 0.55);
+}
+
+form {
+  width: 450px;
+  background: wheat;
+  border-radius: 15px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form .top {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(17, 17, 17);
+  margin-bottom: 10px;
+}
+
+.top h1 {
+  font-family: monospace;
+}
