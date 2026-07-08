@@ -4,13 +4,15 @@ const cross = document.querySelector("#close");
 const productDiv = document.querySelector("#products");
 const form = document.querySelector("form");
 
-const productarr = [];
+const productarr = JSON.parse(localStorage.getItem("products")) || []; // aeta aguru empty string thila saeta jaga re neiki mu lsd ani ki rokhi deli
 
 let updateIndex = null;
 
 let ui = () => {
   productDiv.innerHTML = "";
   productarr.forEach((elem, index) => {
+    // productsarr jaga re lsd loagai delu tu kn pai na tu seta ku setitem  duara send korun thilu local storage re
+
     productDiv.innerHTML += `<div class="proCrd">
           <div class="img">
             <img
@@ -33,6 +35,7 @@ let ui = () => {
   });
 };
 
+ui();
 createBtn.addEventListener("click", () => {
   formDiv.style.display = "flex";
 });
@@ -68,8 +71,10 @@ form.addEventListener("submit", (event) => {
   if (updateIndex != null) {
     productarr[updateIndex] = obj;
     updateIndex = null;
+    localStorage.setItem("products", JSON.stringify(productarr));
   } else {
     productarr.push(obj);
+    localStorage.setItem("products", JSON.stringify(productarr));
   }
 
   ui();
@@ -90,5 +95,6 @@ const updateproduct = (name) => {
 
 const deleteproduct = (index) => {
   productarr.splice(index, 1);
+  localStorage.setItem("products", JSON.stringify(productarr));
   ui();
 };
