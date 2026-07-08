@@ -1,10 +1,12 @@
+const { jsx } = require("react/jsx-runtime");
+
 const add = document.querySelector(".add");
 const flexbox = document.querySelector(".flex");
 const cross = document.querySelector("#close");
 const formBox = document.querySelector("#formBox");
 const taskBox = document.querySelector(".task");
 const mainBox = document.querySelector("#mainBox");
-let taskArr = [];
+let taskArr = JSON.parse(localStorage.getItem(Tasks)) || [];
 let updateIndex = null;
 add.addEventListener("click", (event) => {
   flexbox.style.display = "Flex";
@@ -24,9 +26,11 @@ formBox.addEventListener("submit", (event) => {
 
   if (updateIndex != null) {
     taskArr[updateIndex] = taskInput;
+    localStorage.setItem("Tsks", JSON.stringify(taskArr));
     updateIndex = null;
   } else {
     taskArr.push(taskInput);
+    localStorage.setItem("Tsks", JSON.stringify(taskArr));
   }
 
   formBox.reset();
@@ -49,8 +53,11 @@ let ui = () => {
   });
 };
 
+ui();
+
 let deleteTask = (index) => {
   taskArr.splice(index, 1);
+  localStorage.setItem("Tasks", JSON.stringify(taskArr));
   ui();
 };
 
