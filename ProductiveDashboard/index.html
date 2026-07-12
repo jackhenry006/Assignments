@@ -36,7 +36,7 @@
 
             <ul id="goalList"></ul>
           </div>
-          <div id="wheather">
+          <div id="weather">
             <h2>Weather</h2>
 
             <h1 id="temp">--°C</h1>
@@ -55,6 +55,30 @@
             <button id="newQuote">New Quote</button>
           </div>
         </div>
+      </div>
+
+      <!-- TODO LIST MODAL -->
+
+      <div id="todoContainer">
+        <button id="todoClose">✕</button>
+        <div id="taskBox">
+          <!-- Tasks will appear here -->
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+
+      <div class="flex">
+        <div class="top">
+          <div></div>
+          <p id="close">X</p>
+        </div>
+
+        <form id="formBox">
+          <input id="taskInput" type="text" placeholder="Enter Your Task" />
+
+          <button>Create</button>
+        </form>
       </div>
     </main>
     <script src="script.js"></script>
