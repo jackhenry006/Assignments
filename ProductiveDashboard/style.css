@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ropa+Sans:ital@0;1&display=swap");
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+main {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+nav {
+  height: 8%;
+  width: 100%;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+nav h2 {
+  font-family: "Bebas Neue";
+  font-size: xxx-large;
+  letter-spacing: 3px;
+  transition: 0.99s;
+}
+
+nav h2:hover {
+  color: azure;
+  cursor: pointer;
+}
+
+#spacing {
+  height: 92%;
+  width: 100%;
+  padding: 30px;
+}
+#cardBox {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background-color: orangered;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "r11 r12 r13"
+    "r21 r12 r23"
+    "r31 r31 r31";
+}
+
+#todo {
+  background-color: rgba(0, 0, 0, 0.952);
+  grid-area: r11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+#todo button {
+  height: 80px;
+  width: 300px;
+  font-family: "Bebas Neue";
+  font-size: xx-large;
+  box-shadow: 0px 0px 20px rgb(121, 104, 104);
+  background-color: rgb(255, 255, 255);
+  transition: 0.99s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#todo button:hover {
+  background-color: rgb(255, 255, 255);
+}
+#promodoro {
+  grid-area: r12;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#timer {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#promodoro button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: large;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  transition: 0.9s;
+}
+
+#promodoro h2 {
+  font-family: "Bebas Neue";
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+#promodoro button:hover {
+  background-color: orange;
+}
+#dailyGoal {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+  grid-area: r21;
+}
+
+.goalInput {
+  display: flex;
+  gap: 10px;
+}
+
+.goalInput input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.goalInput button {
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+#goalList {
+  list-style: none;
+}
+
+.goal {
+  background-color: #2b2b2b;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+#wheather {
+  /* background-color: whitesmoke; */
+  grid-area: r13;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+}
+
+#temp {
+  font-size: 45px;
+}
+#timeDate {
+  background-color: whitesmoke;
+  grid-area: r23;
+}
+
+#timeDate {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#time {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#date {
+  font-size: 18px;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+#motivation {
+  background-color: #1e1e1e;
+  color: white;
+
+  border-radius: 20px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+  grid-area: r31;
+}
+#motivation h2 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
+  font-size: 35px;
+}
+
+#quote {
+  margin: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#newQuote {
+  background-color: orangered;
+  color: white;
+
+  border: none;
+  padding: 10px 20px;
+
+  border-radius: 20px;
+  cursor: pointer;
+}

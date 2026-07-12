@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productive Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h2>Productive Dashboard</h2>
+      </nav>
+
+      <div id="spacing">
+        <div id="cardBox">
+          <div id="todo">
+            <button>TODO-LIST</button>
+          </div>
+          <div id="promodoro">
+            <h2>Pomodoro Timer</h2>
+
+            <h1 id="timer">25:00</h1>
+
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+          </div>
+          <div id="dailyGoal">
+            <h2>Daily Goals</h2>
+
+            <div class="goalInput">
+              <input id="goalText" type="text" placeholder="Add a goal" />
+              <button id="addGoal">+</button>
+            </div>
+
+            <ul id="goalList"></ul>
+          </div>
+          <div id="wheather">
+            <h2>Weather</h2>
+
+            <h1 id="temp">--°C</h1>
+            <p id="city">Loading...</p>
+            <p id="condition"></p>
+          </div>
+          <div id="timeDate">
+            <h2 id="time">3.00pm</h2>
+            <p id="date">26/12/4</p>
+          </div>
+          <div id="motivation">
+            <h2>Daily Motivation</h2>
+
+            <p id="quote">"Believe you can and you're halfway there."</p>
+
+            <button id="newQuote">New Quote</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
