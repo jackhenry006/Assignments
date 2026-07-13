@@ -1,10 +1,14 @@
-// ================= TODO =================
+// ================= TODO LIST =================
 
-const todoButton = document.querySelector("#todo button");
+const todoBtn = document.querySelector("#todo button");
 
-const modal = document.querySelector(".flex");
+const todoContainer = document.querySelector("#todoContainer");
 
-const blackOverlay = document.querySelector(".overlay");
+const todoClose = document.querySelector("#todoClose");
+
+const overlay = document.querySelector(".overlay");
+
+const popup = document.querySelector(".flex");
 
 const close = document.querySelector("#close");
 
@@ -14,65 +18,45 @@ const taskInput = document.querySelector("#taskInput");
 
 const taskBox = document.querySelector("#taskBox");
 
-const todoContainer = document.querySelector("#todoContainer");
-
-const todoClose = document.querySelector("#todoClose");
-
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 let editIndex = null;
 
-// open popup
+// OPEN TODO PAGE
 
-todoButton.onclick = () => {
+todoBtn.onclick = () => {
   todoContainer.style.display = "block";
 
-  todoClose.style.display = "flex";
-
-  modal.style.display = "block";
-
-  blackOverlay.style.display = "block";
+  renderTasks();
 };
 
-// close popup
-
-close.onclick = () => {
-  modal.style.display = "none";
-
-  blackOverlay.style.display = "none";
-
-  taskInput.value = "";
-
-  editIndex = null;
-};
-
-blackOverlay.onclick = () => {
-  modal.style.display = "none";
-
-  blackOverlay.style.display = "none";
-
-  taskInput.value = "";
-
-  editIndex = null;
-};
-
-todoContainer.onclick = (e) => {
-  if (e.target === todoContainer) {
-    todoContainer.style.display = "none";
-    todoClose.style.display = "none";
-  }
-};
+// CLOSE TODO PAGE
 
 todoClose.onclick = () => {
   todoContainer.style.display = "none";
-  todoClose.style.display = "none";
-  modal.style.display = "none";
-  blackOverlay.style.display = "none";
-  taskInput.value = "";
-  editIndex = null;
 };
 
-// show tasks
+// OPEN CREATE POPUP
+
+document.querySelector("#todo button").addEventListener("dblclick", () => {
+  popup.style.display = "block";
+
+  overlay.style.display = "block";
+});
+
+close.onclick = () => {
+  popup.style.display = "none";
+
+  overlay.style.display = "none";
+};
+
+overlay.onclick = () => {
+  popup.style.display = "none";
+
+  overlay.style.display = "none";
+};
+
+// DISPLAY TASKS
 
 function renderTasks() {
   taskBox.innerHTML = "";
@@ -80,40 +64,35 @@ function renderTasks() {
   tasks.forEach((task, index) => {
     taskBox.innerHTML += `
 
-
         <div class="task">
 
 
-            <p>${task}</p>
+        <p>${task}</p>
 
 
-            <div class="btn">
+        <div class="btn">
 
 
-            <button onclick="editTask(${index})">
-            Edit
-            </button>
+        <button onclick="editTask(${index})">
+        Edit
+        </button>
 
 
-            <button onclick="deleteTask(${index})">
-            Delete
-            </button>
-
-
-            </div>
+        <button onclick="deleteTask(${index})">
+        Delete
+        </button>
 
 
         </div>
 
 
+        </div>
 
         `;
   });
 }
 
-renderTasks();
-
-// create task
+// ADD TASK
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -136,14 +115,18 @@ form.addEventListener("submit", (e) => {
 
   taskInput.value = "";
 
-  modal.style.display = "none";
+  popup.style.display = "none";
 
-  blackOverlay.style.display = "none";
+  overlay.style.display = "none";
 });
+
+// SAVE
 
 function saveTasks() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+
+// DELETE
 
 function deleteTask(index) {
   tasks.splice(index, 1);
@@ -153,21 +136,23 @@ function deleteTask(index) {
   renderTasks();
 }
 
+// EDIT
+
 function editTask(index) {
   taskInput.value = tasks[index];
 
   editIndex = index;
 
-  modal.style.display = "block";
+  popup.style.display = "block";
 
-  blackOverlay.style.display = "block";
-
-  todoContainer.style.display = "block";
+  overlay.style.display = "block";
 }
+
+renderTasks();
 
 // ================= POMODORO =================
 
-const timer = document.querySelector("#timer");
+const timerDisplay = document.querySelector("#timer");
 
 const start = document.querySelector("#start");
 
@@ -175,13 +160,11 @@ const pause = document.querySelector("#pause");
 
 const reset = document.querySelector("#reset");
 
-let pomodoroData = JSON.parse(localStorage.getItem("pomodoro")) || {
+let pomodoro = JSON.parse(localStorage.getItem("pomodoro")) || {
   seconds: 1500,
-
-  running: false,
 };
 
-let seconds = pomodoroData.seconds;
+let seconds = pomodoro.seconds;
 
 let interval = null;
 
@@ -190,13 +173,12 @@ function updateTimer() {
 
   let sec = seconds % 60;
 
-  timer.innerHTML = `${min}:${sec < 10 ? "0" : ""}${sec}`;
+  timerDisplay.innerHTML = `${min}:${sec < 10 ? "0" : ""}${sec}`;
 
   localStorage.setItem(
     "pomodoro",
     JSON.stringify({
       seconds: seconds,
-      running: false,
     }),
   );
 }
@@ -214,7 +196,7 @@ start.onclick = () => {
 
       interval = null;
 
-      alert("Pomodoro Complete 🎉");
+      alert("Pomodoro Completed");
     }
   }, 1000);
 };
@@ -237,7 +219,7 @@ reset.onclick = () => {
 
 updateTimer();
 
-// ================= DAILY GOALS =================
+// ================= DAILY GOAL =================
 
 const goalText = document.querySelector("#goalText");
 
@@ -247,7 +229,7 @@ const goalList = document.querySelector("#goalList");
 
 let goals = JSON.parse(localStorage.getItem("goals")) || [];
 
-function displayGoals() {
+function showGoals() {
   goalList.innerHTML = "";
 
   goals.forEach((goal, index) => {
@@ -257,9 +239,7 @@ function displayGoals() {
 <li class="goal">
 
 
-<span onclick="completeGoal(this)">
 ${goal}
-</span>
 
 
 <button onclick="removeGoal(${index})">
@@ -270,12 +250,11 @@ ${goal}
 </li>
 
 
-
 `;
   });
 }
 
-displayGoals();
+showGoals();
 
 addGoal.onclick = () => {
   let value = goalText.value.trim();
@@ -288,7 +267,7 @@ addGoal.onclick = () => {
 
   goalText.value = "";
 
-  displayGoals();
+  showGoals();
 };
 
 function removeGoal(index) {
@@ -296,21 +275,17 @@ function removeGoal(index) {
 
   localStorage.setItem("goals", JSON.stringify(goals));
 
-  displayGoals();
-}
-
-function completeGoal(el) {
-  el.classList.toggle("completed");
+  showGoals();
 }
 
 // ================= CLOCK =================
 
 function clock() {
-  let date = new Date();
+  let now = new Date();
 
-  document.querySelector("#time").innerHTML = date.toLocaleTimeString();
+  document.querySelector("#time").innerHTML = now.toLocaleTimeString();
 
-  document.querySelector("#date").innerHTML = date.toLocaleDateString();
+  document.querySelector("#date").innerHTML = now.toLocaleDateString();
 }
 
 setInterval(clock, 1000);
@@ -319,14 +294,14 @@ clock();
 
 // ================= QUOTES =================
 
-const quotes = [
+let quotes = [
   "Believe you can and you're halfway there.",
 
   "Success is built daily.",
 
-  "Stay focused and keep moving.",
+  "Work hard in silence.",
 
-  "Dream big, work hard.",
+  "Stay focused.",
 ];
 
 document.querySelector("#newQuote").onclick = () => {

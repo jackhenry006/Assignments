@@ -7,3 +7,13 @@ bonaibu HTML re.
 2.tapore tu each element ku background color provide koribu CSS re.
 3.tapore grid template coloms use kori bu kete ta column ochi dekhi bu , then tu ta pore sete ra coloum kori bu 
 mundo logaibu ki kuta kete width ro hai paribo ( main concept mundo logaibu ).
+
+
+React Vite Installation
+
+1. npm create vite@latest
+2. give project name
+3. framework - React
+4. variant - javascript
+5. Eslint
+6. install with npm start now - now
